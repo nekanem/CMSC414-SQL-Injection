@@ -8,10 +8,8 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((server_name, server_port))
 
 #Ask user for their credentials and take in input form console
-print("Username: ")
-user_name = input()
-print("Password: ")
-pwd = input()
+user_name = input('Username: ')
+pwd = input('Password: ')
 
 #send server credentials
 client.send(user_name.encode())
